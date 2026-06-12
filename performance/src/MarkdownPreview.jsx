@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 const JANK_DELAY = 100;
 
-export default function MarkdownPreview({ render, options }) {
+export default memo(function MarkdownPreview({ render, options }) {
   const expensiveRender = () => {
     const start = performance.now();
     while (performance.now() - start < JANK_DELAY) {}
@@ -17,4 +19,4 @@ export default function MarkdownPreview({ render, options }) {
       {expensiveRender()}
     </div>
   );
-}
+})
