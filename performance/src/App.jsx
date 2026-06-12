@@ -18,7 +18,8 @@ export default function App() {
   }, []);
 
   const options = useMemo(() => ({ text, theme }), [text, theme]);
-  const render = useCallback((text) => marked.parse(text), []);
+  // const render = useCallback((text) => marked.parse(text), []);
+  const render = useMemo(() => (text) => marked.parse(text), []);
 
   return (
     <div className="app">
