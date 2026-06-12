@@ -1,42 +1,83 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+body {
+  font-family: "Short Stack", cursive;
+  padding: 50px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Minimal CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.doodle button,
+.doodle textarea,
+.doodle input,
+.doodle select {
+  font-family: "Short Stack", cursive;
+}
+
+.doodle button {
+  cursor: pointer;
+}
+
+td {
+  min-width: 200px;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-fieldset {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.note-form input,
+.note-form textarea,
+.note-form select {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+select {
+  padding: 10px;
 }
