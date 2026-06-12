@@ -1,0 +1,12 @@
+{
+  "file:///Users/reda/Web/react/Intermediate-React-v6/RSC/src/ClientComponent.jsx": {
+    "id": "./src/ClientComponent.jsx",
+    "chunks": [
+      "vendors-node_modules_react_jsx-dev-runtime_js",
+      "vendors-node_modules_react_jsx-dev-runtime_js.chunk.js",
+      "client0",
+      "client0.chunk.js"
+    ],
+    "name": "*"
+  }
+}

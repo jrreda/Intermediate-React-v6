@@ -1,0 +1,14 @@
+{
+  "moduleLoading": {
+    "prefix": "auto",
+    "crossOrigin": null
+  },
+  "moduleMap": {
+    "./src/ClientComponent.jsx": {
+      "*": {
+        "specifier": "file:///Users/reda/Web/react/Intermediate-React-v6/RSC/src/ClientComponent.jsx",
+        "name": "*"
+      }
+    }
+  }
+}
