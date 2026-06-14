@@ -3,7 +3,7 @@ import postNote from "./postNote";
 
 export default async function Write() {
   async function getUsers() {
-    const db = await AsyncDatabase.open("./notes.db");
+    const db = await AsyncDatabase.open("../../../../notes.db");
     return db.all("SELECT * FROM users");
   }
   const users = await getUsers();

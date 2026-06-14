@@ -12,7 +12,7 @@ export default async function postNote(formData) {
     throw new Error("All fields are required");
   }
 
-  const db = await AsyncDatabase.open("./notes.db");
+  const db = await AsyncDatabase.open("../../../../notes.db");
   await db.run(
     "INSERT INTO notes (from_user, to_user, note) VALUES (?, ?, ?)",
     [from, to, note],

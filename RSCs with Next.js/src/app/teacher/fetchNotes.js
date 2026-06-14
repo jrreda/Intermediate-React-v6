@@ -2,7 +2,7 @@
 import { AsyncDatabase } from "promised-sqlite3";
 
 export default async function fetchNotes(since) {
-  const db = await AsyncDatabase.open("./notes.db");
+  const db = await AsyncDatabase.open("../../../../notes.db");
   let rows;
   if (since) {
     rows = await db.all(

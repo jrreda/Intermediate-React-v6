@@ -12,7 +12,7 @@ export default async function updateUsername(formData) {
     throw new Error("All fields are required");
   }
 
-  const db = await AsyncDatabase.open("./notes.db");
+  const db = await AsyncDatabase.open("../../../../notes.db");
   await db.run("UPDATE users SET name = ? WHERE id = ?", [username, id]);
   redirect("/");
 }
